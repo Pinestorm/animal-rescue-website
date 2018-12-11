@@ -47,6 +47,29 @@ footer {
   background-color: #000;
 }
 
+h2,
+h3 {
+  font-family: Laila, serif;
+  color: #243A4C;
+}
+
+.btn {
+  border-color: #000;
+  background-color: #243A4C;
+  color: #CBCB9A;
+}
+
+.btn:hover {
+  border-color: #000;
+  background-color: #CBCB9A;
+  color: #243A4C;
+}
+
+h4 {
+  font-family: Laila, serif;
+  color: #000;
+}
+
 @media only screen and (min-width: 25em) {
 
   h1 {
@@ -56,4 +79,21 @@ footer {
   nav {
     text-align: center;
   }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-content {
+    border: 3px solid #000;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    max-width: 700px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
 }
