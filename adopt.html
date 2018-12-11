@@ -38,6 +38,161 @@
   </header>
 
   <main>
+    <section>
+      <h2 class="giga gutter pad-t-1-2">RMC Adoption Aplication</h2>
+      <p class="gutter push-0">So you decided to adopt one of our rescued creatures? That’s great! We just need to know if you’ll be a good fit for your creature.</p>
+      <p class="gutter push-0">All fields marked with a (*) are mandatory.</p>
+      <p class="gutter push-0 pad-b">Please fill in as much detail as you can in each tab.</p>
+      <form class="push-0" method="POST" action="https://formspree.io/stormieleaf227@gmail.com">
+        <fieldset>
+          <legend class="bold mega push pad-b-1-8 gutter-1-2">About you</legend>
+          <div class="grid push-1-2">
+            <div class="unit xs-1 s-1 m-1-2 l-1-4 push gutter-1-2">
+              <label class="kilo pad-t-1-2 pad-b-1-8" for="creature">Name of the creature you want*</label>
+              <select id="creature" name="creature">
+                <option value="">Select a creature</option>
+                <option>Ryuu (Earth Dragon)</option>
+                <option>Kasai (Fire Dragon)</option>
+                <option>Chiron (Griffin)</option>
+                <option>Flare (Phoenix)</option>
+                <option>Kraken (Sea Monster)</option>
+                <option>Silver (Unicorn)</option>
+              </select>
+            </div>
+          </div>
+          <legend class="kilo gutter-1-2 push">I understand that the creature may not be available anymore once I complete this form*</legend>
+          <input id="available-yes" type="radio" name="available-yes">
+          <label class="gutter-1-2" for="available-yes">Yes</label>
+          <input id="available-no" type="radio" name="available-no">
+          <label for="available-no">No</label>
+          <legend class="kilo gutter-1-2 push pad-t">I understand that these creatures are powerful, and that they may be severely dangerous*</legend>
+          <input id="dangerous-yes" type="radio" name="dangerous-yes">
+          <label class="gutter-1-2" for="dangerous-yes">Yes</label>
+          <input id="dangerous-no" type="radio" name="dangerous-no">
+          <label for="dangerous-no">No</label>
+          <legend class="kilo gutter-1-2 push pad-t">I have read through all information about the creature before deciding to adopt*</legend>
+          <input id="read-yes" type="radio" name="read-yes">
+          <label class="gutter-1-2 pad-b" for="read-yes">Yes</label>
+          <input id="read-no" type="radio" name="read-no">
+          <label class="pad-b" for="read-no">No</label>
+          <div class="grid push-1-2">
+           <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-8 push gutter-1-2">
+             <label class="pad-b-1-8 kilo" for="name">First & Last Name*</label>
+             <input id="name" name="name" required>
+           </div>
+           <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+             <label class="kilo pad-t-1-8 pad-b-1-8" for="age">Age</label>
+             <input id="age" type="number" name="age" required>
+           </div>
+           <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+             <label class="pad-b-1-8 kilo" for="birthdate">Date of birth*</label>
+             <input id="birthdate" type="date" name="birthdate" required>
+           </div>
+           <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+             <label class="pad-b-1-8 kilo" for="email">Email Address</label>
+             <input id="email" type="email" name="email">
+           </div>
+           <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+             <label class="pad-b-1-8 kilo" for="phone">Phone number*</label>
+             <input id="phone" type="tel" name="phone">
+           </div>
+           <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+             <label class="pad-b-1-8 kilo" for="phone">Alternate phone number</label>
+             <input id="phone" type="tel" name="phone">
+           </div>
+           <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+              <label class="kilo pad-t-1-4 pad-b-1-8" for="workaddress">Address*</label>
+              <input id="address" name="address" required>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+              <label class="kilo pad-t-1-4 pad-b-1-8" for="city">City*</label>
+              <input id="city" name="city" required>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+              <label class="kilo pad-t-1-2 pad-b-1-8" for="province">Province</label>
+              <select id="province" name="province">
+                <option value="">Select a province</option>
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland & Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Québec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+              </select>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+              <label class="kilo pad-t-1-2 pad-b-1-4" for="code">Postal Code*</label>
+              <input id="code" name="code" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="bold mega push pad-b-1-8 gutter-1-2">Creature Information</legend>
+          <legend class="kilo gutter-1-2 push">Have you ever owned a mythical creature before?*</legend>
+          <input id="own-yes" type="radio" name="own-yes">
+          <label class="gutter-1-2" for="own-yes">Yes</label>
+          <input id="own-no" type="radio" name="own-no">
+          <label for="own-no">No</label>
+          <legend class="kilo gutter-1-2 pad-t push">Do you have other pets at home?*</legend>
+          <input id="pets-yes" type="radio" name="pets-yes">
+          <label class="gutter-1-2" for="pets-yes">Yes</label>
+          <input id="pets-no" type="radio" name="pets-no">
+          <label for="pets-no">No</label>
+          <div class="gutter-1-2">
+            <legend class="kilo pad-t" id="feed">What do you plan on feeding your creature?</legend>
+            <textarea class="textbox push-2" aria-labelledby="feed" id="message" name="message"></textarea>
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 push gutter-1-2">
+            <label class="kilo pad-t-1-8 pad-b-1-8" for="age">How many years do you plan on keeping your creature?*</label>
+            <input id="years" type="number" name="years" required>
+          </div>
+          <div class="gutter-1-2">
+            <legend class="kilo pad-t" id="why">Why do you want a mythical creature?</legend>
+            <textarea class="textbox push-2" aria-labelledby="why" id="why" name="why"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="bold mega push pad-b-1-8 gutter-1-2">Other</legend>
+          <div class="push gutter-2 text-center">
+            <label class="kilo pad-t-1-2 pad-b-1-8" for="how">How did you hear about our organization?</label>
+            <select id="how" name="how">
+              <option value="">---</option>
+              <option>Word of mouth</option>
+              <option>TV Ad</option>
+              <option>Printed Ad</option>
+              <option>Online Forum</option>
+              <option>Youtube Video</option>
+              <option>Social Media</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="gutter-1-2 text-center bold">
+            <p>I certify that all information I have entered above is true and that nothing relevant has been omitted.</p>
+            <p>I realize that if any information above is false, my application may be denied.</p>
+            <p>I am financially able to adopt and care for this mythical creature, including food, water, shelter and medical care.</p>
+            <p>RMC reserves the right to deny an application if it is deemed that it is of the best interest of the creature.</p>
+          </div>
+          <div class="text-center">
+            <legend class="kilo gutter-1-2 push"></legend>
+            <input id="verification" type="checkbox" name="verification" required>
+            <label class="gutter-1-2" for="checkbox">I agree to the above statements and assure that I am above 18 years of age.*</label>
+          </div>
+        </fieldset>
+
+        <div class="pad-t text-center">
+          <button class="btn push-2 gutter-2 mega" type="submit">Submit Application</button>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer>
