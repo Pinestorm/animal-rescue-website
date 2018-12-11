@@ -5,42 +5,43 @@ html {
 }
 
 nav {
-  background-color: #243A4C;
-  color: #CBCB9A;
+  background-color: #243a4c;
+  color: #cbcb9a;
   text-decoration: none;
   font-family: Laila, serif;
 }
 
-h1{
+h1 {
   color: #545426;
   font-family: Laila, serif;
 }
 
 .btn-ghost {
-  color: #CBCB9A;
-  border-color: #CBCB9A;
+  color: #cbcb9a;
+  border-color: #cbcb9a;
 }
 
 .btn-ghost:hover {
-  color: #243A4C;
-  background-color: #CBCB9A;
-  border-color: #243A4C;
+  color: #243a4c;
+  background-color: #cbcb9a;
+  border-color: #243a4c;
 }
 
 .blue {
-  background-color: #4C86A4;
+  background-color: #4c86a4;
 }
 
 footer {
-  background-color: #243A4C;
-  color: #CBCB9A;
+  background-color: #243a4c;
+  color: #cbcb9a;
 }
 
 .line-1 {
   height: 1em;
   width: 100%;
-  background-color: #4C86A4;
+  background-color: #4c86a4;
 }
+
 .line-2 {
   width: 100%;
   height: .5em;
@@ -50,19 +51,19 @@ footer {
 h2,
 h3 {
   font-family: Laila, serif;
-  color: #243A4C;
+  color: #243a4c;
 }
 
 .btn {
-  border-color: #CBCB9A;
-  background-color: #243A4C;
-  color: #CBCB9A;
+  border-color: #cbcb9a;
+  background-color: #243a4c;
+  color: #cbcb9a;
 }
 
 .btn:hover {
   border-color: #000;
-  background-color: #CBCB9A;
-  color: #243A4C;
+  background-color: #cbcb9a;
+  color: #243a4c;
 }
 
 h4 {
@@ -79,6 +80,7 @@ h4 {
   nav {
     text-align: center;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
